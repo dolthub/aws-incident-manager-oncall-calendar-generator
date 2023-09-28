@@ -10,3 +10,4 @@ To run in AWS Lambda, make sure:
 To test locally, see the `Test_GenerateCalendar` function in `main_test.go` and make sure:
 - you populate the `ONCALL_CALENDAR_GENERATOR_ASSUMED_ROLE` environment variable with the role you need to assume in order to access. For DoltHub developers, this should be the ARN of the LiquidataDeveloper role.
 - you may need to alter the `initializeLocalClient` code in order to load the correct AWS credentials for your environment.
+- you populate the ROTATION_ID_ARN environment variable in your test process' environment with the ARN of the AWS Incident Manager rotation for which you want to generate a calendar.
