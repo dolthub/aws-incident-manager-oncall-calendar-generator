@@ -1,3 +1,3 @@
 build-AwsIncidentManagerOncallCalendar:
-	GOOS=linux go build -o bootstrap
+	GOOS=linux GOARCH=arm64 go build -o bootstrap
 	zip dolthub-prod-ssm-contact-ics-function.zip bootstrap
