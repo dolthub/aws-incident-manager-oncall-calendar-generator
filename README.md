@@ -1,7 +1,9 @@
 AWS Incident Manager On-call Calendar Generator
 ===
 
-AWS Lambda function that generates an on-call schedule that calendar apps can subscribe to. 
+AWS Lambda function that generates an on-call schedule that calendar apps can subscribe to. For more details, see the [DoltHub blog post](https://www.dolthub.com/blog/2023-09-29-go-aws-on-call-schedule/).
+
+![system diagram](https://www.dolthub.com/blog/static/05a9042ce12b91bbc2291c1e29f3c2b3/38af3/oncall-shift-calendar-system-diagram.png)
 
 To run in AWS Lambda, make sure: 
 - your Lambda execution role has permission to call [`ssm-contacts:ListRotationShifts`](https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_ListRotationShifts.html)
